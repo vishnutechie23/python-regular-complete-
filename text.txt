@@ -1,0 +1,2 @@
+Exit venv → deactivate
+Enter venv → .venv\Scripts\activate
