@@ -1,2 +1,112 @@
 Exit venv → deactivate
 Enter venv → .venv\Scripts\activate
+
+Here is a useful PowerShell / VS Code Terminal basic commands cheat sheet for daily use.
+
+## 1. Directory navigation
+
+| Command               | Action                                                            |
+| --------------------- | ----------------------------------------------------------------- |
+| `pwd`                 | Show current directory                                            |
+| `ls`                  | List files and folders                                            |
+| `dir`                 | List files and folders                                            |
+| `cd foldername`       | Enter a folder                                                    |
+| `cd ..`               | Go back one folder                                                |
+| `cd ..\..`            | Go back two folders                                               |
+| `cd \`                | Go to drive root                                                  |
+| `cd ~`                | Go to user home directory                                         |
+| `cd "C:\path\folder"` | Go to a specific directory                                        |
+| `cd -`                | Not supported in standard PowerShell (use `cd ..` or a full path) |
+| `Set-Location`        | Change directory                                                  |
+| `Get-Location`        | Show current directory                                            |
+
+## 2. File and folder commands
+
+| Command                               | Action                           |
+| ------------------------------------- | -------------------------------- |
+| `mkdir NewFolder`                     | Create a folder                  |
+| `New-Item file.txt -ItemType File`    | Create a file                    |
+| `New-Item Folder -ItemType Directory` | Create a folder                  |
+| `ni file.txt`                         | Create a file (shortcut)         |
+| `Remove-Item file.txt`                | Delete a file                    |
+| `Remove-Item Folder -Recurse`         | Delete a folder and its contents |
+| `Copy-Item file.txt backup.txt`       | Copy a file                      |
+| `Move-Item file.txt Folder\`          | Move a file                      |
+| `Rename-Item old.txt new.txt`         | Rename a file                    |
+| `Get-Content file.txt`                | Display file contents            |
+| `Clear-Content file.txt`              | Empty a file                     |
+
+## 3. Terminal commands
+
+| Command            | Action                          |
+| ------------------ | ------------------------------- |
+| `cls`              | Clear terminal                  |
+| `clear`            | Clear terminal                  |
+| `exit`             | Close terminal session          |
+| `history`          | Show command history            |
+| `Get-History`      | Show command history            |
+| `Ctrl + C`         | Stop running command            |
+| `↑ / ↓`            | Navigate previous commands      |
+| `Tab`              | Auto-complete file/folder names |
+| `Get-Command`      | List available commands         |
+| `Get-Help command` | Get command help                |
+
+## 4. Python environment commands
+
+| Command                         | Action                         |
+| ------------------------------- | ------------------------------ |
+| `python --version`              | Check Python version           |
+| `python`                        | Start Python interpreter       |
+| `exit()`                        | Exit Python interpreter        |
+| `deactivate`                    | Deactivate virtual environment |
+| `.\.venv\Scripts\Activate.ps1`  | Activate virtual environment   |
+| `pip list`                      | List installed packages        |
+| `pip install numpy`             | Install NumPy                  |
+| `pip uninstall numpy`           | Uninstall NumPy                |
+| `pip freeze`                    | Show installed packages        |
+| `pip freeze > requirements.txt` | Save package list              |
+
+## 5. Basic Git commands
+
+| Command                         | Action                            |
+| ------------------------------- | --------------------------------- |
+| `git status`                    | Check file changes                |
+| `git init`                      | Initialize Git repository         |
+| `git add .`                     | Stage current directory changes   |
+| `git add -A`                    | Stage all repository changes      |
+| `git commit -m "message"`       | Create commit                     |
+| `git push origin main`          | Push to GitHub                    |
+| `git pull origin main`          | Pull latest changes               |
+| `git pull --rebase origin main` | Pull using rebase                 |
+| `git log --oneline`             | View commit history               |
+| `git branch`                    | List branches                     |
+| `git branch --show-current`     | Show current branch               |
+| `git remote -v`                 | Check connected GitHub repository |
+| `git diff`                      | View unstaged changes             |
+| `git stash`                     | Temporarily save changes          |
+| `git stash pop`                 | Restore stashed changes           |
+| `git clone URL`                 | Clone a repository                |
+
+## 6. Most useful shortcuts to remember
+
+Daily terminal usage
+
+```
+pwd
+ls
+cd Numpy
+cd ..
+mkdir NewFolder
+cls
+```
+
+Daily GitHub workflow
+
+```
+git status
+git add -A
+git commit -m "Your message"
+git push origin main
+```
+
+My suggestion: Learn the directory navigation and file commands first. Then practice Git commands. You don't need to memorize everything at once.
